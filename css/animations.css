@@ -1,0 +1,119 @@
+.entry:hover {
+  -webkit-transition: all .05s linear;
+  -moz-transition: all .05s linear;
+  -ms-transition: all .05s linear;
+  -o-transition: all .05s linear;
+  transition: all .05s linear;
+}
+
+#editor {
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -ms-transition: all .15s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.entry {
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.annotation {
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -ms-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.entry.ng-enter {
+  max-height: 0;
+}
+
+.entry.ng-enter-active {
+  max-height: 150px;
+}
+
+.entry.ng-leave {
+  max-height: 150px;
+}
+.entry.ng-leave-active {
+  max-height: 0;
+}
+
+.annotation.ng-enter {
+  max-height: 0;
+}
+
+.annotation.ng-enter-active {
+  max-height: 500px;
+}
+
+.annotation.ng-leave {
+  max-height: 250px;
+}
+.annotation.ng-leave-active {
+  max-height: 0;
+}
+
+.crucial-add:before,
+.later-add:before,
+.personal-add:before,
+.todo-add:before,
+.work-add:before {
+  -webkit-animation: appearIn .4s ease-in-out;
+  animation: appearIn .4s ease-in-out;
+}
+
+@-webkit-keyframes appearIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes appearIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.recording:after {
+  -webkit-animation: blink_recording 1.5s infinite ease-in-out;
+  animation: blink_recording 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes blink_recording {
+  0%   {background-color: #f54c49;}
+  50%  {background-color:#f7f7f7;}
+  100% {background-color: #f54c49;}
+}
+
+@keyframes blink_recording {
+  0%   {background-color: #f54c49;}
+  50%  {background-color:#f7f7f7;}
+  100% {background-color: #f54c49;}
+}
+
+#intermedSpan {
+  -webkit-animation: blink_text 1.5s infinite ease-in-out;
+  animation: blink_text 1.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes blink_text {
+  0%   {background-color: #f5dfe1;}
+  50%  {background-color: #ffffff;}
+  100% {background-color: #f5dfe1;}
+}
+
+@keyframes blink_text {
+  0%   {background-color: #f5dfe1;}
+  50%  {background-color: #ffffff;}
+  100% {background-color: #f5dfe1;}
+}
+
+/*http://www.minimamente.com/example/magic_animations/*/
+/*http://daneden.github.io/animate.css/*/
+/*Recording*/
+/*http://www.bypeople.com/active-led-css-button/*/
