@@ -148,7 +148,7 @@ app.controller('controller', function($scope, $http) {
     var query = editorElement.innerText;
 
     if (query !== '') {
-      $http.get('http://spotlight.sztaki.hu:2222/rest/spot?text=' + encodeURIComponent(query))
+      $http.get('http://spotlight.dbpedia.org/rest/spot?text=' + encodeURIComponent(query))
         .success(function (data) {
           var entities = data.annotation.surfaceForm;
 
