@@ -11,7 +11,7 @@ var SpeechRecognizer = (function () {
   }
 
   // Public API
-  SpeechRecognizer = {
+  var SpeechRecognizer = {
     /**
      * Starts listening for sound.
      * Make sure to set the <code>onResult</code> and <code>onIntermedResult</code>

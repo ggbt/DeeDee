@@ -176,7 +176,7 @@
       <input id="note_title" type="text" ng-model="activeNote.title" placeholder="Note title" />
       <div id="editor" ng-blur="blurEditor()" ng-focus="focusEditor()" ng-keyup="keyUpEditor($event)"></div>
       <ul id="annotations_area">
-        <li class="annotation" ng-repeat="(entity, val) in activeNote.entities">
+        <li class="annotation" ng-repeat="(entity, _) in activeNote.entities">
           <a target="_blank" ng-href="{{annotations[entity].url}}">{{annotations[entity].title}}</a><br/>
           <span>{{annotations[entity].summary}}</span>
         </li>
