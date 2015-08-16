@@ -5,14 +5,6 @@ function testable() {
 var app = angular.module('DeeDee', ['ngAnimate']);
 app.controller('controller', function($scope, $http) {
 
-  // #####
-
-  window.speechSynthesis.onvoiceschanged = function(e) {
-    speechSynthesis.getVoices();
-  };
-
-  // #####
-
   $scope.searchText = '';
 
   $scope.filters = {
